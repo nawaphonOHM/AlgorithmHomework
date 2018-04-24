@@ -1,3 +1,5 @@
+//NawaphonIsarathanachaikul 4/24/2018
+
 #include <stdio.h>
 
 typedef struct structA
