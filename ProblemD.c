@@ -9,9 +9,12 @@ typedef struct structA
     unsigned int reservedMoney;
 }reservedTransections;
 
-void quicksort (reservedTransections* startFlag, reservedTransections* lastFlag);
-reservedTransections* partition (reservedTransections* startFlag, reservedTransections* lastFlag);
-void sortByMoney (reservedTransections* startFlag, reservedTransections* lastFlag);
+void quicksort (reservedTransections* startFlag, 
+                reservedTransections* lastFlag);
+reservedTransections* partition (reservedTransections* startFlag, 
+                                 reservedTransections* lastFlag);
+void sortByMoney (reservedTransections* startFlag, 
+                  reservedTransections* lastFlag);
 
 int main (void)
 {
@@ -58,7 +61,8 @@ int main (void)
     return 0;
 }
 
-reservedTransections* partition (reservedTransections* startFlag, reservedTransections* lastFlag)
+reservedTransections* partition (reservedTransections* startFlag, 
+                                 reservedTransections* lastFlag)
 {
     reservedTransections* pivot;
     reservedTransections* intialFlag;
@@ -92,7 +96,8 @@ reservedTransections* partition (reservedTransections* startFlag, reservedTranse
     return lastFlag;
 }
 
-void quicksort (reservedTransections* startFlag, reservedTransections* lastFlag)
+void quicksort (reservedTransections* startFlag, 
+                reservedTransections* lastFlag)
 {
     reservedTransections* intialFlag;
     reservedTransections* newLastFlag;
@@ -109,7 +114,8 @@ void quicksort (reservedTransections* startFlag, reservedTransections* lastFlag)
     quicksort (newLastFlag + 1, lastFlag);
 }
 
-void sortByMoney (reservedTransections* startFlag, reservedTransections* lastFlag)
+void sortByMoney (reservedTransections* startFlag, 
+                  reservedTransections* lastFlag)
 {
     reservedTransections temp;
 
