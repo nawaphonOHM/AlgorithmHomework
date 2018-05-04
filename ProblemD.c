@@ -42,7 +42,7 @@ int main (void)
     quicksort (startFlag, lastFlag);
     sortByMoney (startFlag, lastFlag);
 
-    for(counterFlag = 0; counterFlag < totalData; counterFlag++)
+    for(counterFlag = 0; counterFlag < totalData; counterFlag++, startFlag++)
     {
         if (startFlag -> starttime >= starterTimeFlag)
         {
@@ -54,8 +54,6 @@ int main (void)
 
             starterTimeFlag = startFlag -> endtime;
         }
-
-        startFlag++;
     }
 
     return 0;
